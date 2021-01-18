@@ -12,7 +12,7 @@ class ItalyRegionsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/regions.php' => config_path('regions.php'),
+            __DIR__.'/../config/regions.php' => config_path('regions.php'),
         ], 'regions-config');
     }
     /**
@@ -23,8 +23,8 @@ class ItalyRegionsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/config/regions.php',
-            'regions'
+            __DIR__.'/../config/regions.php',
+            'regions-config'
         );
     }
 }
