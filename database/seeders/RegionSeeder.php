@@ -32,7 +32,6 @@ class RegionSeeder extends Seeder
 						}
 					}
 				}
-
 				break;
 		}
 	}
