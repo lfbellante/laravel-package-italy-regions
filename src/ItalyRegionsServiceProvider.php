@@ -18,6 +18,10 @@ class ItalyRegionsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../database/migrations/create_regions_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_regions_table.php'),
           ], 'regions-migrations');
+
+	    $this->publishes([
+		    __DIR__ . '/../database/seeders/Region.php' => database_path('seeders/Region.php'),
+	    ], 'regions-seeders');
     }
     /**
     * Make config publishment optional by merging the config from the package.

@@ -9,6 +9,9 @@
             "email": "lfbellante@gmail.com"
         }
     ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
