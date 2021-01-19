@@ -20,7 +20,7 @@ class ItalyRegionsServiceProvider extends ServiceProvider
           ], 'regions-migrations');
 
 	    $this->publishes([
-		    __DIR__ . '/../database/seeders/Region.php' => database_path('seeders/Region.php'),
+		    __DIR__ . '/../database/seeders/RegionSeeder.php' => database_path('seeders/RegionSeeder.php'),
 	    ], 'regions-seeders');
     }
     /**
