@@ -23,7 +23,7 @@ class RegionSeeder extends Seeder
 				if($response->ok()){
 					foreach($response->json() as $region){
 						$newRegion = Region::where('code', $region['regione']['codice'])->get();
-						if($newRegion->count() !== 0){
+						if($newRegion->count() == 0){
 							$newRegion = new Region();
 							$newRegion->code = $region['regione']['codice'];
 							$newRegion->name = $region['regione']['nome'];
