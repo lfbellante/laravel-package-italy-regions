@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Database\Seeder;
-use App\Models\Region;
+use Lfbellante\ItalyRegions\Models\Region;
 use Carbon\Carbon;
 
 class RegionSeeder extends Seeder
