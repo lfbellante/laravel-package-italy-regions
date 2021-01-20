@@ -29,6 +29,8 @@ class RegionSeeder extends Seeder
 							$newRegion->name = $region['regione']['nome'];
 							$newRegion->created_at = Carbon::now()->format('Y-m-d H:i:s');
 							$newRegion->updated_at = Carbon::now()->format('Y-m-d H:i:s');
+
+							$newRegion->save();
 						}
 					}
 				}
